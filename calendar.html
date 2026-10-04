@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Classes | Gurdwara Guru Granth Sahib Punjabi School</title>
+
+    <link rel="stylesheet" href="css/new style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="top">
+
+    <div class="container">
+
+        <div class="school-logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Punjabi School Logo">
+            </a>
+        </div>
+
+        <div class="school-title">
+            <h1>Gurdwara Guru Granth Sahib Punjabi School</h1>
+            <p>37 Albert Drive, Glasgow G41 4AB</p>
+        </div>
+
+        <nav>
+            <strong>
+                <a href="index.html">Home</a>
+                <a href="classes.html">Classes</a>
+                <a href="staff.html">Staff</a>
+                <a href="parents.html">Parents</a>
+                <a href="policies.html">Policies</a>
+                <a href="googleclassroom.html">Google Classroom 2026-27</a>
+                <a href="Virsa.html">Annual Programme - Virsa</a>
+            </strong>
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+    <style>
+
+        /* =========================================
+           CALENDAR PAGE
+        ========================================= */
+
+        .calendar-page {
+            padding: 50px 20px;
+            background: #f5f7fa;
+        }
+
+        .calendar-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .calendar-intro {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .calendar-intro h1 {
+            color: #0B2D5C;
+            margin-bottom: 15px;
+        }
+
+        .calendar-intro p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+
+        /* IMPORTANT DATES */
+
+        .important-dates {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+            margin-bottom: 45px;
+        }
+
+        .important-dates h2 {
+            color: #0B2D5C;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .date-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .date-card {
+            background: #f5f7fa;
+            border-left: 5px solid #C89B2B;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .date-card h3 {
+            color: #0B2D5C;
+            margin-bottom: 8px;
+        }
+
+        .date-card .date {
+            font-weight: bold;
+            font-size: 18px;
+            color: #C89B2B;
+            margin-bottom: 8px;
+        }
+
+
+        /* DOCUMENT SECTIONS */
+
+        .document-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+            margin-bottom: 40px;
+        }
+
+        .document-section h2 {
+            color: #0B2D5C;
+            margin-bottom: 15px;
+        }
+
+        .document-section p {
+            line-height: 1.7;
+        }
+
+
+        /* BUTTONS */
+
+        .calendar-button {
+            display: inline-block;
+            background: #0B2D5C;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+
+        .calendar-button:hover {
+            background: #C89B2B;
+            color: white;
+        }
+
+
+        /* AQA */
+
+        .aqa-section {
+            border-top: 6px solid #C89B2B;
+        }
+
+        .exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        .exam-table th {
+            background: #0B2D5C;
+            color: white;
+            padding: 14px;
+            text-align: left;
+        }
+
+        .exam-table td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .exam-table tr:nth-child(even) {
+            background: #f5f7fa;
+        }
+
+        .exam-note {
+            background: #fff8e6;
+            border-left: 5px solid #C89B2B;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 6px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .calendar-page {
+                padding: 30px 15px;
+            }
+
+            .important-dates,
+            .document-section {
+                padding: 25px;
+            }
+
+            .exam-table {
+                font-size: 14px;
+            }
+
+            .exam-table th,
+            .exam-table td {
+                padding: 9px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+
+
+
+<!-- =========================================
+     SIDE MENU
+========================================= -->
+
+<div id="sideMenu" class="side-menu">
+
+    <a
+        href="javascript:void(0)"
+        class="close-btn"
+        onclick="toggleMenu()"
+    >
+        &times;
+    </a>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="classes.html">Classes</a>
+
+    <a href="parents.html">Parents</a>
+
+    <a href="policies.html">Policies</a>
+
+    <a href="calendar.html">School Calendar</a>
+
+    <a href="classroom.html">Google Classroom</a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="virsa.html">VIRSA</a>
+
+   
+
+</div>
+
+
+
+<!-- =========================================
+     PAGE BANNER
+========================================= -->
+
+<section class="page-banner">
+
+    <h1>School Calendar</h1>
+
+    <p>
+        Important dates, school holidays, events and examinations
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
+<main class="calendar-page">
+
+<div class="calendar-container">
+
+
+    <!-- INTRO -->
+
+    <div class="calendar-intro">
+
+        <h1>
+            Punjabi School Calendar 2026–27
+        </h1>
+
+        <p>
+            Please use this page to keep up to date with important
+            Punjabi School dates, events, assessments, parent meetings
+            and AQA examinations.
+        </p>
+
+        <p>
+            The complete school calendar and examination timetable
+            can also be downloaded below.
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================
+         IMPORTANT DATES
+    ====================================== -->
+
+    <section class="important-dates">
+
+        <h2>
+            ⭐ Important Dates
+        </h2>
+
+
+        <div class="date-grid">
+
+
+            <div class="date-card">
+
+                <h3>School Re-opens</h3>
+
+                <div class="date">
+                    Sunday 16 August 2026
+                </div>
+
+                <p>
+                    Punjabi School returns for the new school year.
+                </p>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Bandi Chhorr Divas</h3>
+
+                <div class="date">
+                    Sunday 8 November 2026
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Guru Nanak Gurpurab</h3>
+
+                <div class="date">
+                    Tuesday 24 November 2026
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Class Assessments</h3>
+
+                <div class="date">
+                    November 2026
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Parent Teacher Meetings</h3>
+
+                <div class="date">
+                    December 2026
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Punjabi VIRSA</h3>
+
+                <div class="date">
+                    Sunday 21 March 2027
+                </div>
+
+                <p>
+                    Annual Punjabi School programme.
+                </p>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Class Assessments</h3>
+
+                <div class="date">
+                    April 2027
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Parent Teacher Meetings</h3>
+
+                <div class="date">
+                    May 2027
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>Sports / Fun Day</h3>
+
+                <div class="date">
+                    Sunday 6 June 2027
+                </div>
+
+            </div>
+
+
+            <div class="date-card">
+
+                <h3>School Re-opens</h3>
+
+                <div class="date">
+                    Sunday 15 August 2027
+                </div>
+
+                <p>
+                    Start of the 2027–28 school year.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SCHOOL CALENDAR PDF
+    ====================================== -->
+
+    <section class="document-section">
+
+        <h2>
+            📅 Punjabi School Calendar 2026–27
+        </h2>
+
+        <p>
+            The complete Punjabi School holiday and events calendar
+            is available below.
+        </p>
+
+        <p>
+            This includes school holidays, important events,
+            assessments, Parent Teacher Meetings, VIRSA and Sports/Fun Day.
+        </p>
+
+
+        <a
+            href="documents/CALENDAR.pdf"
+            target="_blank"
+            class="calendar-button"
+        >
+            📄 View School Calendar
+        </a>
+
+
+        <a
+            href="documents/CALENDAR.pdf"
+            download
+            class="calendar-button"
+        >
+            ⬇ Download Calendar
+        </a>
+
+    </section>
+
+
+
+    <!-- =====================================
+         AQA EXAMINATIONS
+    ====================================== -->
+
+    <section class="document-section aqa-section">
+
+        <h2>
+            🎓 AQA Punjabi Examination Timetable 2027
+        </h2>
+
+        <p>
+            Important examination dates for students studying
+            Punjabi GCSE and A Level.
+        </p>
+
+
+
+        <!-- A LEVEL -->
+
+        <h3>
+            A Level Punjabi – 7682
+        </h3>
+
+        <table class="exam-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Paper</th>
+
+                    <th>Exam</th>
+
+                    <th>Date</th>
+
+                    <th>Time</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>Paper 1</td>
+
+                    <td>Reading and Writing – 2h 30m</td>
+
+                    <td>21 May 2027</td>
+
+                    <td>PM</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Paper 2</td>
+
+                    <td>Writing – 2h</td>
+
+                    <td>28 May 2027</td>
+
+                    <td>AM</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Paper 3</td>
+
+                    <td>Listening, Reading and Writing – 2h 30m</td>
+
+                    <td>9 June 2027</td>
+
+                    <td>AM</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+
+        <br>
+
+
+
+        <!-- GCSE -->
+
+        <h3>
+            GCSE Punjabi – 8683
+        </h3>
+
+
+        <table class="exam-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Assessment</th>
+
+                    <th>Duration</th>
+
+                    <th>Date</th>
+
+                    <th>Time</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>Listening</td>
+
+                    <td>45 minutes</td>
+
+                    <td>27 May 2027</td>
+
+                    <td>PM</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Reading</td>
+
+                    <td>1 hour</td>
+
+                    <td>27 May 2027</td>
+
+                    <td>PM</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Writing</td>
+
+                    <td>1 hour 15 minutes</td>
+
+                    <td>11 June 2027</td>
+
+                    <td>PM</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Speaking Test</td>
+
+                    <td>—</td>
+
+                    <td>10 or 17 April 2027</td>
+
+                    <td>—</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+
+        <div class="exam-note">
+
+            <strong>Please note:</strong>
+
+            <br><br>
+
+            AQA examination dates and arrangements are subject to
+            confirmation. Please check the final examination
+            timetable provided by the school/AQA.
+
+            <br><br>
+
+            The dates should be checked against the final AQA
+            timetable before publication.
+
+        </div>
+
+
+
+        <br>
+
+
+
+        <a
+            href="documents/AQA Exam timetable 2026-27.pdf"
+            target="_blank"
+            class="calendar-button"
+        >
+            📄 View AQA Timetable
+        </a>
+
+
+        <a
+            href="documents/AQA Exam timetable 2026-27.pdf"
+            download
+            class="calendar-button"
+        >
+            ⬇ Download AQA Timetable
+        </a>
+
+    </section>
+
+
+
+    <!-- =====================================
+         REMINDER
+    ====================================== -->
+
+    <section class="document-section">
+
+        <h2>
+            🔔 Important Reminder
+        </h2>
+
+        <p>
+            Parents and students are encouraged to check this page
+            regularly for updates to school dates, events and
+            examination information.
+        </p>
+
+        <p>
+            GCSE and A Level students should also follow any
+            additional information provided by their class teachers.
+        </p>
+
+    </section>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+<footer class="main-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    Gurdwara Guru Granth Sahib<br>
+                    Punjabi School
+                </p>
+
+                <p>
+                    37 Albert Drive<br>
+                    Glasgow<br>
+                    G41 4AB
+                </p>
+
+                <p>
+                    <a href="mailto:panjabischoolglasgow@gmail.com">
+                        Email
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://www.facebook.com/PanjabiHeritageCultureSchool/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Gurdwara Guru Granth Sahib, Punjabi School, Glasgow
+            </p>
+
+            <p>
+                Punjabi School established since <strong>1976</strong>,
+                first located at Nithsdale Road, Glasgow.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript - only load once -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
